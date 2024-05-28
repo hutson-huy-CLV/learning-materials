@@ -1,0 +1,15 @@
+"use strict";this.default_r_tvffkgi=this.default_r_tvffkgi||{};(function(_){var window=this;
+try{
+var Wyd=function(a,b){return a.length!==b.length?!1:a.every((c,d)=>c.path===b[d].path)},Xyd=function(a){const b=a.children.primary;return b?[...a.segments,...Xyd(b)]:a.segments};_.Yyd=function(a){(a=a.doc.getElementById("main"))&&a!==document.activeElement&&_.hHa(a)};
+_.Zyd=class{constructor(a,b,c){this.childrenOutletContexts=a;this.doc=b;this.router=c;a=c.events.pipe(_.Se(d=>d instanceof _.rp||d instanceof _.gh),_.Ff(null),_.wf(),_.Se(([d,e])=>!(d instanceof _.rp&&e instanceof _.rp)),_.D(([,d])=>d));b=_.Oe(b,"focus",{capture:!0}).pipe(_.Nf(a),_.Se(([,d])=>d instanceof _.rp),_.D(([,d])=>d.id),_.Ff(-1));a.pipe(_.D(d=>{var e=this.router.url,f;const g=null==(f=this.childrenOutletContexts.getContext("primary"))?void 0:f.route;f=g?_.Bp(this.router,["."],{relativeTo:g}):
+null;return{event:d,url:e,rootOutletTree:f,activeSandboxId:this.getActiveSandboxId()}}),_.wf(),_.Se(([d])=>d.event instanceof _.rp)).pipe(_.Nf(b),_.Se(([[d,e],f])=>{(f=d.event.id===f&&document.activeElement!==document.body||!this.shouldHandleNavigation(d,e))||(d=d.rootOutletTree,e=e.rootOutletTree,d&&e?(d=Xyd(d.root),e=Xyd(e.root),e=!Wyd(d,e)):e=!1,f=!e);return f?!1:!0})).subscribe(()=>{_.Yyd(this)},d=>{this.logError(d)})}logError(a){const b=a instanceof Error?a.message:`${a}`;a={stack:a instanceof
+Error?a.stack||"":""};_.rh().logClientError({message:b,metadata:a,eventType:"navigationFocus",eventName:"navigationFocusError",errorExperience:6})}};_.Zyd=_.im([_.h4a(1,(0,_.jia)(_.Gh)),_.jm("design:paramtypes",[_.sp,Document,_.Ep])],_.Zyd);
+}catch(e){_._DumpException(e)}
+try{
+_.lh("pm_navigation_focus_rif");
+var $yd=class extends _.Zyd{shouldHandleNavigation(a,b){return!_.Hc(a.url).getPath().endsWith("rif-empty-page")&&!_.Hc(b.url).getPath().endsWith("rif-empty-page")}getActiveSandboxId(){return null}};$yd.\u0275fac=function(a){return new (a||$yd)(_.m(_.sp),_.m(_.Gh),_.m(_.Ep))};$yd.\u0275prov=_.h({token:$yd,factory:$yd.\u0275fac,providedIn:"root"});var azd=class{};azd.\u0275fac=function(a){return new (a||azd)};azd.\u0275mod=_.r({type:azd,id:"pm_navigation_focus_rif"});
+azd.\u0275inj=_.k({providers:[{provide:_.Mp,useValue:{NavigationFocusRif:$yd}}]});_.Qf(azd,"pm_navigation_focus_rif");
+_.mh();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_r_tvffkgi);
+// Google Inc.
