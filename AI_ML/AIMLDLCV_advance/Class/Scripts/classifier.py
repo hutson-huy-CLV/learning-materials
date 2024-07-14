@@ -11,7 +11,7 @@ from sklearn.model_selection import GridSearchCV
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("D:\Hutson\learning-materials\AI&ML\Khóa 12-02AIMLDLCV nâng cao\Class\Datasets\diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 # profile = ProfileReport(data, title="Diabetes Report", explorative=True)
 # profile.to_file("report.html")
 
